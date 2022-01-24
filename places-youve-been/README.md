@@ -23,6 +23,15 @@ Code: function PlacesToSee() {
 }
 Expected Output: Undefined
 
+Description: PlacesToSee.prototype.addPlace = function ();
+
+Test: "It will add a place object to our PlaceToSee object"
+Code: let placesToSee = new PlacestoSee
+placesToSee.addPlace("france")
+placesToSee.addPlace("germany")
+Expected Output: placesToSee;
+France, German - objects
+
 Description: PlacesToSee.prototype.assignId = function ();
 
 Test: "It will add an Id to any new place"
@@ -37,3 +46,12 @@ Code: let placesToSee = new PlacesToSee()
 placesToSee.findPlace("france")
 Expected Output: 1 : France
 
+Description: PlacesToSee.prototype.deletePlace = function ();
+
+Test: "It will delete a place and its corresponding id"
+Code: let placesToSee = new PlacesToSee();
+placesToSee.addPlace("france")
+placesToSee.addPlace("germany")
+placesToSee.deletePlace("france")
+Expected Output: placesToSee();
+Germany - object; 

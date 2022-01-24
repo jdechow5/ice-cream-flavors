@@ -20,6 +20,14 @@ PlacesToSee.prototype.findPlace = function (id) {
   return false;
 };
 
+PlacesToSee.prototype.deletePlace = function (id) {
+  if (this.places[id] === undefined) {
+    return false;
+  }
+  delete this.places[id];
+  return true;
+}
+
 function Place(name, landmarks, timeOfYear, foods) {
   this.name = name;
   this.landmarks = landmarks;
