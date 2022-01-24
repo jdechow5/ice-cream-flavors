@@ -13,13 +13,12 @@ PlacesToSee.prototype.assignId = function () {
   return this.currentId;
 }
 
-AddressBook.prototype.findContact = function (id) {
-  if (this.contacts[id] != undefined) {
-    return this.contacts[id];
+PlacesToSee.prototype.findPlace = function (id) {
+  if (this.places[id] != undefined) {
+    return this.places[id];
   }
   return false;
 };
-
 
 function Place(name, landmarks, timeOfYear, foods) {
   this.name = name;
